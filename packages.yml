@@ -12,4 +12,29 @@ packages:
     revision: main
 
   - git: "https://github.com/datalakehouse/dlh-stripe-analytics-dbt" # git URL
+<<<<<<< HEAD
     revision: main
+=======
+    revision: main
+
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/datalakehouse/dlh-doordash-analytics-dbt.git" # git URL
+    revision: main
+
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/datalakehouse/dlh-snowflake-analytics-dbt.git" # git URL
+    revision: main
+
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/datalakehouse/dlh-ceridian-dayforce-analytics-dbt.git" # git URL
+    revision: main
+    
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/datalakehouse/dlh-staffing-recruiting-analytics-dbt.git" # git URL
+    revision: main
+
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/datalakehouse/dlh-beans-route-dbt.git" # git URL
+    revision: main
+
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/datalakehouse/dlh-bullhorn-analytics-dbt.git" # git URL
+    revision: main
+    
+  - package: dbt-labs/dbt_utils
+    version: 0.8.6
+>>>>>>> 660575cfa94cb2f5abadf5a8efc08ff8a222d0d2
